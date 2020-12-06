@@ -19,13 +19,15 @@
       <nav>
          <ul>
             <li><a href="#" class="active">home</a></li>
-            <li><a href="#" id="hethongphong">hệ thống phòng</a>
-               <div class="dropdown-menu " aria-labelledby="dropdownMenuLink"><a class="dropdown-item"
-                     href="/home/0">Myla's homestay Biệt thự 11 Lô D</a><a class="dropdown-item" href="#">Myla's
-                     homestay Nguyên căn 22/2 Võ Thị Sáu</a><a class="dropdown-item" href="#">Myla's homestay
-                     30-3C Võ Thị Sáu</a><a class="dropdown-item" href="#">Myla's homestay 45-11 Thùy Vân</a><a
-                     class="dropdown-item" href="#">Myla's homestay nguyên căn 160-9-12 Phạm Huy Thông</a><a
-                     class="dropdown-item" href="#">Myla's homestay phòng đơn căn 160/7/11A Phạm Huy Thông</a>
+            <li id="hethongphong">
+               <a href="#" >hệ thống phòng</a>
+               <div class="dropdown-menu ">
+                  <a class="dropdown-item" href="#">Myla's homestay Biệt thự 11 Lô D</a>
+                  <a class="dropdown-item" href="#">Myla's homestay Nguyên căn 22/2 Võ Thị Sáu</a>
+                  <a class="dropdown-item" href="#">Myla's homestay 30-3C Võ Thị Sáu</a>
+                  <a class="dropdown-item" href="#">Myla's homestay 45-11 Thùy Vân</a>
+                  <a class="dropdown-item" href="#">Myla's homestay nguyên căn 160-9-12 Phạm Huy Thông</a>
+                  <a class="dropdown-item" href="#">Myla's homestay phòng đơn căn 160/7/11A Phạm Huy Thông</a>
                </div>
             </li>
             <li><a href="#">liên hệ</a></li>
@@ -180,9 +182,7 @@
          fade: true,
          cssEase: 'linear'
       });
-      document.getElementById("hethongphong").addEventListener("mouseover", () => {
-         document.querySelector(".dropdown-menu").classList.toggle("active");
-      })
+      
    </script>
 </body>
 

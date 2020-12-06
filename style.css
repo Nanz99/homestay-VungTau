@@ -11,7 +11,7 @@
 body{
    font-family: 'Montserrat', sans-serif;
    font-size: 16px;
-   color: #000000;
+   color: #000;
    background-color: #ffffff;
 }
 ul{
@@ -124,8 +124,8 @@ nav ul li a:hover{
 }
 .system-homestay h1{
    text-align: center;
-   font-size: 3.2rem;
-   color: #000000;
+   font-size: 3rem;
+   color: #333;
    margin-bottom: 40px;
 }
 .system-homestay__content{
@@ -148,15 +148,19 @@ nav ul li a:hover{
 }
 .system-homestay__detail h3{
    margin-bottom: 25px;
+   color: #222;
 }
 .system-homestay__detail p{
    margin-bottom: 15px;
+   color: #222;
 }
 .system-homestay__detail p i{
    margin-right: 15px;
+   color: #222;
 }
 .description p{
    font-style: italic;
+   color: #222;
 }
 
 footer{
@@ -306,7 +310,7 @@ input:focus,textarea:focus{
 
 
 /* dropdown */
-.dropdown-menu{
+ .dropdown-menu{
    position: absolute;
    top: 100%;
    left: 0;
@@ -324,6 +328,7 @@ input:focus,textarea:focus{
    background-clip: padding-box;
    border: 1px solid rgba(0,0,0,.15);
    border-radius: .25rem;
+   transition: all 0.3s ease;
 }
 .dropdown-item {
    display: block;
@@ -344,4 +349,9 @@ input:focus,textarea:focus{
 }
 .dropdown-menu.active{
    display: block;
+}
+
+#hethongphong:hover .dropdown-menu{
+   display:block;
+
 }
