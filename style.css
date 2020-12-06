@@ -56,7 +56,17 @@ nav ul li a:hover{
    width: 100%;
    overflow: hidden;
 }
-
+.carousel{
+  position: relative;
+}
+.carousel::before{
+   background: rgba(0,0,0,0.5);
+   content:"";
+   position: absolute;top: 0;
+   left: 0;right: 0;
+   bottom: 0;
+   z-index: 10;
+}
 .slick-next,.slick-prev{
    display: none !important;
 }
@@ -78,6 +88,7 @@ nav ul li a:hover{
    transform: translate(-50%,-50%);
    text-align: center;
    width: 70%;
+   z-index: 11;
 }
 .main-content h1{
    color:#ffffff;
@@ -101,6 +112,7 @@ nav ul li a:hover{
    bottom: 50px;
    left: 50%;
    transform: translateX(-50%);
+   z-index: 11;
 }
 .slick-dots li button{
    display: none;
@@ -134,6 +146,7 @@ nav ul li a:hover{
    grid-gap: 30px;
 }
 .system-homestay__item{
+
    border-radius: 7px;
    overflow: hidden;
    box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -1px rgba(0,0,0,.06);
